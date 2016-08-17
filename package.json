@@ -1,0 +1,26 @@
+{
+    "name": "kscript-vs-code",
+    "displayName": "kscript-vs-code",
+    "description": "kscript language support",
+    "version": "0.0.1",
+    "publisher": "murzilka17",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "kscript",
+            "aliases": ["KScript", "Kscript", "kscript"],
+            "extensions": [".ks"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "kscript",
+            "scopeName": "source.js",
+            "path": "./syntaxes/kscript.tmLanguage"
+        }]
+    }
+}
